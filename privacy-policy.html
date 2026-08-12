@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kebijakan Privasi - Zak Nihongo Lesson</title></head>
+<body><main style="max-width:850px;margin:40px auto;font-family:Arial,sans-serif;line-height:1.65;padding:0 20px">
+<h1>Kebijakan Privasi Zak Nihongo Lesson</h1>
+<p>Terakhir diperbarui: <b>12 Aug 2026</b></p>
+<p>Zak Nihongo Lesson dikelola oleh Yayasan Manabu Mantappu Indonesia. Kebijakan ini menjelaskan data yang diproses untuk menyediakan administrasi dan pembelajaran kelas.</p>
+<h2>Data yang dapat diproses</h2>
+<ul>
+<li>Data akun: nama, email, Firebase user ID, role, status akun, dan foto profil opsional.</li>
+<li>Data kelas: keanggotaan kelas, jadwal, kehadiran, serta progress belajar per BAB.</li>
+<li>Data pembelajaran: shukudai, status penyelesaian, catatan progress, tautan materi kelas, dan pengumuman.</li>
+<li>Data administrasi pembayaran: paket, periode, jumlah tagihan, status pembayaran, catatan verifikasi, serta gambar bukti pembayaran yang diunggah siswa.</li>
+<li>Data teknis minimum yang diperlukan Firebase Authentication dan Cloud Firestore untuk menjalankan akun dan sinkronisasi data.</li>
+</ul>
+<h2>Tujuan penggunaan</h2>
+<p>Data digunakan untuk autentikasi, menghubungkan siswa dengan Sensei dan kelasnya, pencatatan kehadiran, evaluasi progress, pengelolaan shukudai/materi, administrasi SPP, pengumuman, keamanan akses, dan pengingat tugas pada perangkat pengguna.</p>
+<h2>Penyedia layanan</h2>
+<p>Versi aplikasi ini menggunakan Google Firebase Authentication dan Cloud Firestore sebagai infrastruktur akun dan database. Foto profil dan bukti pembayaran yang dipilih pengguna dikompresi dan disimpan sebagai data pada Cloud Firestore. Materi pembelajaran berukuran besar disimpan sebagai tautan HTTPS yang dimasukkan Admin/Sensei; aplikasi tidak menggunakan Firebase Cloud Storage atau Cloud Functions pada konfigurasi Spark Edition ini. Data tidak dijual untuk kepentingan periklanan.</p>
+<h2>Notifikasi</h2>
+<p>Pengingat shukudai H-1 dibuat secara lokal di perangkat menggunakan Android WorkManager. Aplikasi dapat memeriksa deadline tugas yang tersedia untuk akun siswa ketika pekerjaan latar belakang dijalankan. Pengguna Android versi yang memerlukan izin notifikasi dapat menolak izin tersebut melalui pengaturan perangkat.</p>
+<h2>Kontrol akses</h2>
+<p>Akses dibatasi menurut identitas dan role akun melalui Firebase Authentication serta Firestore Security Rules. Siswa hanya dapat mengakses data pribadi dan kelas yang diizinkan untuk akunnya. Sensei hanya memperoleh akses sesuai kelas yang ditugaskan. Admin memiliki akses yang diperlukan untuk administrasi layanan.</p>
+<h2>Retensi & penghapusan</h2>
+<p>Pengguna dapat meminta penghapusan akun dari aplikasi melalui menu <b>Profil & Privasi → Hapus akun dan data saya</b>, atau menggunakan halaman permintaan penghapusan akun di <b>[URL_PENGHAPUSAN]</b>. Proses penghapusan dalam aplikasi menghapus akun Firebase Authentication pengguna yang sedang login setelah autentikasi ulang dan membersihkan data pribadi langsung yang dapat dihapus dari client. Catatan pembayaran yang perlu dipertahankan untuk administrasi dapat dianonimkan. Referensi kelas yang tersisa dapat dibersihkan oleh Admin. Data yang wajib dipertahankan karena kewajiban hukum/akuntansi, bila ada, harus dijelaskan oleh pengelola beserta dasar dan masa retensinya.</p>
+<h2>Keamanan</h2>
+<p>Aplikasi menggunakan autentikasi, pembatasan akses berbasis role/kelas, serta Firestore Security Rules. Gambar profil dan bukti pembayaran dibatasi ukuran dan aksesnya. Walaupun langkah yang wajar diterapkan, tidak ada sistem elektronik yang dapat dijamin aman 100%.</p>
+<h2>Anak-anak dan target pengguna</h2>
+<p>Zak Nihongo Lesson ditujukan untuk siswa berusia 13 tahun ke atas. Aplikasi ini tidak secara khusus dirancang untuk anak-anak di bawah usia 13 tahun. Jika pengguna yang masih di bawah umur mengikuti kursus, penggunaan aplikasi sebaiknya dilakukan dengan sepengetahuan dan persetujuan orang tua atau wali. </p>
+<h2>Perubahan kebijakan</h2>
+<p>Kebijakan ini dapat diperbarui saat fitur atau praktik pemrosesan data berubah. Tanggal pembaruan akan ditampilkan di bagian atas halaman.</p>
+<h2>Kontak</h2>
+<p>Yayasan Manabu Mantappu Indonesia<br>Email: <b>manabumantappu@gmail.com</b></p>
+</main></body></html>
